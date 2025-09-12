@@ -8,7 +8,7 @@ Mark has already done a "proof-of-concept" run, by writing a script that coverte
 ## Phase 1: Analysis and Inventory (1-2 days)
 
 ### 1.1 Inventory And Scan All RST Files Using rst_analyzer
-- Create a script that uses our [rst_analyzer.py](https://github.com/markristaino/rst_markdown_test_ak/blob/main/) to inventory and scan all RST files in the AK docs directory
+- Create a script that uses our [rst_analyzer.py](https://github.com/markristaino/rst_markdown_test_ak/blob/main/rst_analyzer.py) to inventory and scan all RST files in the AK docs directory
 - Generate a comprehensive report of all RST features used across the documentation
 - Identify frequency and distribution of different RST elements
 
