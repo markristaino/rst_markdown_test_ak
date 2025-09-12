@@ -3,6 +3,8 @@
 ## Overview
 This document outlines the process for converting all RST documentation files to Markdown format using our custom converter, `rst_to_md_converter_updated.py`. The plan focuses on a systematic approach to ensure all RST features are properly handled and the resulting Markdown files maintain the same or good-enough quality and functionality as the original documentation.
 
+Mark has already done a "proof-of-concept" run, by writing a script that coverted https://docs.actionkit.com/docs/manual/integrations.html into [readable and well-formatted markdown.](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/markristaino/rst_markdown_test_ak/main&homepage=integrations.md#/). During his proof-of-concept, he identified and built 11 handlers that are displayed in the below table.
+
 ## Phase 1: Analysis and Inventory (1-2 days)
 
 ### 1.1 Inventory And Scan All RST Files Using rst_analyzer
