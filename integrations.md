@@ -66,9 +66,7 @@ Contact the vendor below for additional information on their products and what t
 >
 >    * Select "ActBlue Default" as the webhook type. Username and password will use the info from the staff account you created. For the endpoint URL follow this format:
 >
->       html
->
->         <pre>https://[your actionkit hostname]/webhooks/actblue/payments/?account=Default%20ActBlue&backfill=1</pre>
+>      <pre>https://[your actionkit hostname]/webhooks/actblue/payments/?account=Default%20ActBlue&backfill=1</pre>
 >
 >    (if necessary replace `Default%20ActBlue` with your account name, using `%20` to indicate spaces). This webhook will be used for one-time and recurring donations.
 >
@@ -78,9 +76,8 @@ Contact the vendor below for additional information on their products and what t
 >
 >    * If you would like to backfill historical donations, ask ActBlue to do this and to pass the backfill parameter when doing so (and to turn it off after the backfill is complete). This will avoid resubscribing users who have unsubscribed or bounced. Using the example endpoint above as a starting point, the backfill URL would be:
 >
->       html
->
->         <pre>https://[your actionkit hostname]/webhooks/actblue/payments/?account=[account info used for endpoint URL]&backfill=1</pre>
+> 
+> <pre>https://[your actionkit hostname]/webhooks/actblue/payments/?account=[account info used for endpoint URL]&backfill=1</pre>
 >
 >    **Integration Notes**
 >
