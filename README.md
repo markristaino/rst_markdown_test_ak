@@ -17,19 +17,30 @@ This document outlines the process for converting all RST documentation files to
 - Prioritize handlers based on frequency and complexity
 - Document any special cases or edge cases that need custom handling
 
-**Example Inventory Table:**
+**RST Feature Inventory Table:**
 
-| RST Feature | Frequency | Current Handler | Status | Priority | Notes |
-|-------------|-----------|----------------|--------|----------|-------|
-| admonition  | 127       | Yes            | Complete | - | - |
-| image       | 98        | Yes            | Complete | - | - |
-| code-block  | 76        | Yes            | Complete | - | - |
-| raw         | 45        | Yes            | Needs improvement | High | Issues with pre tags |
-| table       | 32        | No             | Not implemented | High | - |
-| toctree     | 28        | No             | Not implemented | Medium | - |
-| include     | 15        | No             | Not implemented | Medium | - |
-| math        | 8         | No             | Not implemented | Low | - |
-
+| RST Feature | Current Handler | Status | Priority | Notes |
+|-------------|----------------|--------|----------|-------|
+| section headers | Yes | Complete | - | Handles all heading levels |
+| admonition  | Yes | Complete | - | Converts to Markdown blockquotes with styling |
+| note        | Yes | Complete | - | Converts to styled blockquotes |
+| warning     | Yes | Complete | - | Converts to styled blockquotes |
+| raw html    | Yes | Complete | - | Handles pre tags and style blocks |
+| links       | Yes | Complete | - | Converts RST links to Markdown format |
+| images      | Yes | Complete | - | Preserves attributes using HTML when needed |
+| code-block  | Yes | Complete | - | Converts to Markdown code blocks with language |
+| inline code | Yes | Complete | - | Converts to Markdown backticks |
+| lists       | Yes | Complete | - | Handles both ordered and unordered lists |
+| blockquotes | Yes | Complete | - | Properly formats nested content |
+| tables      | No  | Not implemented | High | Need to handle simple and complex tables |
+| toctree     | No  | Not implemented | Medium | Table of contents directive |
+| include     | No  | Not implemented | Medium | File inclusion directive |
+| math        | No  | Not implemented | Low | Mathematical equations |
+| footnotes   | No  | Not implemented | Low | Reference notes |
+| substitutions | No | Not implemented | Low | Text replacement feature |
+| glossary    | No  | Not implemented | Low | Term definitions |
+| index       | No  | Not implemented | Low | Index entries |
+| literalinclude | No | Not implemented | Medium | Code inclusion from external files |
 ## Phase 2: Converter Enhancement (2-3 days)
 
 ### 2.1 Implement Missing Handlers
