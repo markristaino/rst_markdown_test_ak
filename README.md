@@ -80,6 +80,6 @@ Mark has already done a "proof-of-concept" run, by writing a script that coverte
 
 ### 4.2 Post-Processing
 - Implement post-processing scripts for common fixes
-- Manually review all pages (potentially witht he help of a new slackbot post)
+- Manually review all pages (potentially with the help of a new slackbot post)
 - Update internal links to point to correct URLs
 
